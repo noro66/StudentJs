@@ -1,3 +1,11 @@
 import Student from "./student.js";
 
-console.log(Student.allStudents());
+const  displayStudents = function (){
+    Student.allStudents().then(function(response){
+        const tableBody = response.map((student) => {
+            console.log(student.id)
+        })
+    })
+
+}
+displayStudents();
