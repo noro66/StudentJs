@@ -15,6 +15,30 @@
 <body>
    <div class="container">
        <div id="app">
+           <h3>Add Student</h3>
+
+           <form method="post" id="form">
+               <div class="mb-4">
+                   <label for="name">Name</label>
+                   <input type="text"
+                          class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="Add the student Name">
+               </div>
+               <div class="mb-4">
+                   <label for="birthday">Birthday date</label>
+                   <input type="date"
+                          class="form-control" name="birthday" id="birthday" aria-describedby="helpId" placeholder="Add the student birthday date ">
+               </div>
+               <div class="mb-4">
+                   <label for="point">Point</label>
+                   <input type="number" min="0" max="100" step="1"
+                          class="form-control" name="point" id="point" aria-describedby="helpId" placeholder="Add the student point">
+               </div>
+               <div class="mb-4">
+                   <button type="submit"
+                          class="form-control text-white btn btn-success">submit</button>
+               </div>
+
+           </form>
            <h2>students table</h2>
            <div class="table-responsive">
                <table class="table">
@@ -22,7 +46,7 @@
                    <tr>
                        <th>Id</th>
                        <th>Name</th>
-                       <th>Age</th>
+                       <th>birthday</th>
                        <th>Note</th>
                        <th>Delete</th>
                    </tr>
