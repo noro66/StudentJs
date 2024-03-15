@@ -3,62 +3,62 @@
     {
       "id": 1,
       "name": "John Doe",
-      "birthday": "1998-05-15",
-      "note": "Excellent student, very attentive in class."
+      "age": 26,
+      "point": 85
     },
     {
       "id": 2,
       "name": "Jane Smith",
-      "birthday": "1999-10-25",
-      "note": "Active participant in extracurricular activities. Enjoys playing soccer."
+      "age": 25,
+      "point": 78
     },
     {
       "id": 3,
       "name": "Michael Johnson",
-      "birthday": "1997-03-08",
-      "note": "Shows great potential in mathematics. Needs improvement in English."
+      "age": 27,
+      "point": 92
     },
     {
       "id": 4,
       "name": "Emily Brown",
-      "birthday": "2000-12-12",
-      "note": "Artistic talent. Won several awards in painting competitions."
+      "age": 22,
+      "point": 80
     },
     {
       "id": 5,
       "name": "Sophia Wilson",
-      "birthday": "1996-08-02",
-      "note": "Top performer in science subjects. Participates actively in science fairs."
+      "age": 25,
+      "point": 89
     },
     {
       "id": 6,
       "name": "Daniel Martinez",
-      "birthday": "1999-04-30",
-      "note": "Struggling with time management. Needs extra help in physics."
+      "age": 23,
+      "point": 70
     },
     {
       "id": 7,
       "name": "Olivia Taylor",
-      "birthday": "1998-09-18",
-      "note": "Excellent communicator. Frequently volunteers for class presentations."
+      "age": 24,
+      "point": 95
     },
     {
       "id": 8,
       "name": "Ethan Anderson",
-      "birthday": "1997-06-20",
-      "note": "Athletic. Captain of the school basketball team."
+      "age": 25,
+      "point": 82
     },
     {
       "id": 9,
       "name": "Ava Garcia",
-      "birthday": "1999-01-05",
-      "note": "Quiet but diligent student. Consistently submits high-quality assignments."
+      "age": 23,
+      "point": 88
     },
     {
       "id": 10,
       "name": "Noah Lopez",
-      "birthday": "2001-02-28",
-      "note": "Enthusiastic reader. Often seen with a book in hand during breaks."
+      "age": 21,
+      "point": 75
     }
   ]
 }
