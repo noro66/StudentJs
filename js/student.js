@@ -2,8 +2,9 @@ import {ENDPOINT} from "./endpoint.js";
 
 export default class Student {
 
-        constructor(name, birthday, point){
+        constructor(id,name, birthday, point){
             this.name = name
+            this.id = id
             this.birthday = birthday
             this.point = point
     }
@@ -22,7 +23,7 @@ export default class Student {
                 body: JSON.stringify({
                     name: this.name,
                     birthday: this.birthday,
-                    point: this.point
+                    point: parseFloat(this.point)
                 })
             }).then(response => response)
                 .catch(reportError => reportError);
