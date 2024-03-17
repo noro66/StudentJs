@@ -27,4 +27,22 @@ export default class Student {
             }).then(response => response)
                 .catch(reportError => reportError);
     }
+
+   static deleteStudent = async function (id)
+    {
+        return  await fetch(ENDPOINT + '/' + id, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+    }
+
+    isAdmitted = () =>{
+       return  this.point >= 50
+    }
+    getAge = function(birthday) {
+        return ((new Date()).getFullYear()) - (new Date(this.birthday).getFullYear());
+    }
+
 }

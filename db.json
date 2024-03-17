@@ -37,12 +37,6 @@
       "point": 70
     },
     {
-      "id": "7",
-      "name": "Olivia Taylor",
-      "birthday": "1998-09-18",
-      "point": 95
-    },
-    {
       "id": "8",
       "name": "Ethan Anderson",
       "birthday": "1996-06-20",
@@ -61,10 +55,10 @@
       "point": 75
     },
     {
-      "id": "391f",
-      "name": "mohamed",
-      "birthday": "2024-03-21",
-      "point": "99"
+      "id": "11",
+      "name": "dahmad ",
+      "birthday": "2024-03-30",
+      "point": "90"
     }
   ]
 }
