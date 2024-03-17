@@ -11,6 +11,7 @@ form.addEventListener('submit', (e) =>{
     // console.log(name.value, birthday.value, point.value)
     const student = new Student( '12',name.value, birthday.value, point.value);
     console.log(student.addStudent(), student.getAge);
+    diplay();
 })
 
 document.addEventListener('click', function(event) {
@@ -18,9 +19,13 @@ document.addEventListener('click', function(event) {
         let  id = event.target.dataset.id;
         console.log(id);
         Student.deleteStudent(id).then(r => console.log(r));
+    }else if(event.target.classList.contains('column-name')) {
+        let columnName = event.target.dataset.name;
+        console.log(columnName);
+        filterBySettings.column = columnName;
+        diplay();
     }
 });
-
 
 const  displayStudents = function (){
    return  Student.allStudents().then(function(response){
@@ -34,7 +39,7 @@ const  displayStudents = function (){
                    : b[filterBySettings.column] - a[filterBySettings.column];
            }
        })
-
+        console.log(filterBySettings)
         return response.map((data, index) => {
             const {id ,name, birthday, point} = data
            const student =  new Student(id, name, birthday, point)
@@ -49,11 +54,13 @@ const  displayStudents = function (){
     })
 
 }
-displayStudents().then((response) => {
-    const  body = document.getElementById('list-student').innerHTML = response.join('');
-    renderSort(filterBySettings.column)
-    // console.log(response.join(' '));
-});
+const diplay = function (){
+    displayStudents().then((response) => {
+        const  body = document.getElementById('list-student').innerHTML = response.join('');
+        renderSort(filterBySettings.column)
+        // console.log(response.join(' '));
+    });
+}
 
 const renderSort = function (column){
     document.querySelector('.sort-' + column).innerHTML =
@@ -63,10 +70,7 @@ const renderSort = function (column){
 
 document.toogleBtn = function (){
     filterBySettings.desc = !filterBySettings.desc;
-    displayStudents().then((response) => {
-        const  body = document.getElementById('list-student').innerHTML = response.join('');
-        renderSort(filterBySettings.column)
-        // console.log(response.join(' '));
-    });
-
+    diplay();
 }
+
+diplay();
