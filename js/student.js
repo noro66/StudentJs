@@ -21,6 +21,7 @@ export default class Student {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
+                    id: this.id,
                     name: this.name,
                     birthday: this.birthday,
                     point: parseFloat(this.point)

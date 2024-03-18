@@ -19,6 +19,7 @@ document.addEventListener('click', function(event) {
         let  id = event.target.dataset.id;
         console.log(id);
         Student.deleteStudent(id).then(r => console.log(r));
+        diplay();
     }else if(event.target.classList.contains('column-name')) {
         let columnName = event.target.dataset.name;
         console.log(columnName);
